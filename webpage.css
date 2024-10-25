@@ -1,0 +1,452 @@
+/* Reset CSS to avoid browser inconsistencies */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  font-family:serif;
+  background-color: #f5f5f5;
+  color: #333;
+ 
+ background-image: url(art-bg.jpg)
+  /*BACKGROUND NG WEB*/
+}
+
+/* Container for header and title sections */
+.container, .container-title {
+  width: 100%;
+  margin: auto;
+
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #215736;
+  height: 100px;
+  padding: 10px 20px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+#logo2 {
+  width: 40px;
+}
+
+.nav-logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-logo h3 {
+  color: white;
+  font-size: 20px;
+}
+.nav-bar{
+  width: 525;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  
+}
+
+.nav-bar li {
+  margin: 0 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-register button {
+  background-color: #fff;
+  color: #4caf50;
+  border: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+/* Main Content Titles */
+.container-title {
+  text-align: center;
+  margin-top: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #215736;
+ 
+
+}
+
+.main-title h3 {
+  font-size: 60px;
+  color: #eaeaea;
+  
+}
+
+.sub-title h5 {
+  font-size: 30px;
+  color: #b3a6a6;
+  margin-top: 13px;
+}
+/*=========EVENT===========*/
+
+.detail-logo{ /*TO ADJUST IMAGE IN EVENT INTRODUCTION ACCORDINGLY*/
+  width: 380px;
+  height: 404px;
+  float: left;
+}
+.detail-info{ /*ADJUSTING TEXTS ACCORDINGLY*/
+  font-size: 28px;
+  text-decoration: underline;
+  color: rgb(228, 238, 221);
+  font-weight: bold;
+  text-align: justify;
+  background-color: #09420e;
+  /*TO JUSTIFY THE TEXT*/
+}
+
+.detail-info, .detail-logo {
+  padding: 40px; /*TO ADD PADDING OR SPACES*/
+  padding-bottom: 65px;
+  margin-top: 45px; /*TO ADD MARGINS IN TOP PART OF IMAGE*/
+}
+/*========DETAILS=========*/
+
+#schedule td {
+  background-color: #819781;
+  
+}
+#schedule tr {
+  background-color:#103706
+}
+table, th, td {
+  border: 4px solid;
+  border-color: #215736;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+#schedule .label-details{
+  background-color: #46722b;
+}
+.container-details{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content:space-around;
+  margin-top: 50px;
+}
+.box-location h3, #location {
+  background-color: #215736;
+  padding: 5px;
+  color: beige;
+  font-size: 20px;
+}
+
+/*=====GALLERY====*/
+.gallery {
+  display: grid; /*TO MAKE A GRID FOR 6 PICTURE*/
+  grid-template-columns: 400px 400px 400px; /*EQUALLY IN SIZE OF COLUMN*/
+  justify-content: center; /*TO MAKE IMAGES IN GALLERY IN CENTER*/
+ 
+}
+.gallery-title{ /*LAYOUT FOR GALLERY TITLE TEXT*/
+  background-color:  #215736;
+  text-align: center;
+  color: beige;
+  padding: 10px;
+  margin: 20px;
+}
+
+.container-gallery img { /*LAYOUT OF IMAGE WIDTH AND HEIGHT*/
+  width: 320px;
+  height: 200px;
+}
+
+/*===REGISTER====*/
+.container-register{ /*EDITING LAYOUT OF BACKGROUND OF REGISTER PAGE*/
+  background-color: #215736;
+  height: 100%;
+  width:100%;
+  padding: 100px;
+  margin-top: 100px;
+  
+}
+.container-register .reg-title{
+  text-align: center;/*ALIGNING TITLE TEXT IN CENTER*/
+  color: #fff;
+}
+.container-register .form-layout {
+  display: flex;  /*TO ORGANIZE THE INPUT FIRST NAME, FULL NAME ETC*/
+  justify-content: center; 
+  align-items: center; 
+}
+.form-layout .icon { /*EDITING FIELDS OF INPUT AND ICONS*/
+  width: 30px; 
+  height: 30px; 
+}
+.container-register input { 
+    width: 70%;
+    height: 50%;
+    background: rgb(185, 225, 139); /*MAKING BACKGROUND OF FIELD OF INPUT LIGHT COLOR FOR EASY VISIBILTY OF TEXTS*/
+    border: none;
+    border: 2px solid rgb(243, 225, 225); 
+    border-radius: 40px; 
+    font-size: 16px;
+    padding: 20px 45px 20px 20px; /*ADDING PADDINGS FOR LAYOUT*/
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-layout label {
+  color: #ffffff; /*to change the color of the label in checkbox*/
+}
+
+.container-register #checkbox{ /*ALTERING WIDTH OF CHECKBOX*/
+  width:20px;
+}
+.form-layout .icon{
+  left: -10%; 
+  position: relative; /*DEFAULT POSITION AND CHANGES POSITION OF ELEMENTS*/
+}
+.form-layout .reg-button { /*FOR LAYOUT OF REGISTER/SUBMIT BUTTON*/
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #5aa85b;
+  font-size: 20px;
+  font-weight: bold;
+  color: beige;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======FOOTER======*/
+footer { 
+  background-color: #215736; /*MATCHING BACKGROUND COLOR TO THEME COLOR OF WEBSITE*/
+  color: rgb(231, 222, 222);
+  padding: 20px 0;
+  text-align: center; /*TO MAKE TEXTS AT CENTER*/
+  margin: 100px;
+  padding: 0px;
+  padding: 40px 10px;
+  border-radius: 20px; /*TO MAKE BORDER MORE VISIBLE*/
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /*Items display with equal spacing around them.*/
+  flex-wrap: wrap;
+}
+
+.contact-details, .social-media { /*FOR LAYOUT OF TEXTS IN CONTACT PAGE*/
+  margin: 20px 0;
+  font-size: 19px;
+}
+
+h4 { /*MAKE THE TEXT TITLE BIGGER*/
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+a { /*DESIGN FOR CLICKABLE SOCIAL MEDIA ACCOUNTS*/
+  color: #06daf6;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom { /*FOR LAYOUT OF BACKGROUND OF CONTACT & SOCMEDS*/
+  margin-top: 20px;
+  border-top: 1px solid #f5e1e1;
+  padding-top: 10px;
+  font-size:20px
+}
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (screens 768px and below) */
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    align-items:flex-start;
+    align-items:center;
+    justify-content:space-between;
+    height: 160px;
+  }
+  .container-title{
+    height: 350px;
+  }
+  
+  .nav-bar ul {
+    flex-direction:row;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav-bar li {
+    margin: 5px 15px;
+  }
+  .nav-register button {
+    width: 400px;
+  }
+  .nav-register {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+/*====EVENT====*/
+.detail-logo{ /*TO ADJUST IMAGE IN EVENT INTRODUCTION ACCORDINGLY*/
+  width: 500px;
+  height: 404px;
+  float: left;
+}
+table, th, td {
+  border: 4px solid;
+  border-color: #0b5911;
+  font-size: 15px;
+  color: #f5f5f5;
+}
+iframe {
+  width: 350px;
+  height: 300px;
+}
+/*====DETAILS====*/
+.container-details{
+  grid-template-columns: auto;
+  
+  gap:10px;
+
+}
+
+
+/*====GALLERY====*/
+.container-gallery .gallery {
+  grid-template-columns: 1fr 1fr;  /*WHEN DEVICE MAX WIDTH IS AROUND 1000px, GRIDS IN GALLERY WILL BECOME 2 COLUMNS*/
+  gap: 20px;
+}
+}
+
+
+
+/* Mobile Devices (screens 480px and below) */
+@media (max-width: 700px) {
+  .main-title h3 {
+    font-size: 24px
+  }
+
+  .sub-title h5 {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 15px;
+    height: 200px;
+  }
+  .container-title{
+    height: 150px;
+  }
+
+  .nav-logo img {
+    width: 40px;
+  }
+
+  .nav-register button {
+    padding: 10px;
+    width:100%;
+  }
+
+  .nav-bar ul {
+    align-items: center;
+  }
+  /*===EVENT*===*/
+  .detail-logo{ /*TO ADJUST IMAGE IN EVENT INTRODUCTION ACCORDINGLY*/
+    width: 380px;
+    height: 304px;
+    float: left;
+  }
+
+  /*====GALLERY====*/
+  .container-gallery .gallery { /*WHEN DEVICE MAX WIDTH IS AROUND 700px, GRIDS IN GALLERY WILL BECOME 2 COLUMNS*/
+    grid-template-columns: 1fr;  
+    padding-left: 20px;
+    gap: 10px;
+  }
+  .gallery-title{ /*MARGIN TOP IS ALTERED SO IT'LL FIT WHEN DEVICE MAX WIDTH IS AROUND 700px*/
+    margin-top: 100px;
+  }
+
+  /*====FOOTER====*/
+  footer{
+width: 220px;
+}
+.contact-details, .social-media { 
+  margin: 15px 0;
+  font-size: 16px;
+}
+/*===REGISTER===*/
+.container-register{ /*EDITING LAYOUT OF BACKGROUND OF REGISTER PAGE*/
+  background-color: #215736;
+  height: 80%;
+  width:100%;
+  padding: 50px;
+  margin-top: 50px;
+}
+.container-register input {
+  width: 150px;
+ height: 40px;
+}
+.form-layout .icon { /*EDITING FIELDS OF INPUT AND ICONS*/
+  width: 30px; 
+  height: 25px; 
+  margin: 5px;
+}
+.form-layout label {
+  font-size:10px;
+
+}
+
+.container-register #checkbox{ /*ALTERING WIDTH OF CHECKBOX*/
+  width:20px;
+}
+/*===REGISTER===*/
+.form-layout a {
+  font-size: 10px;
+ }
+ .form-layout label {
+  font-size: 8px;
+ }
+ .container-register #checkbox{ /*ALTERING WIDTH OF CHECKBOX*/
+  width:10px;
+}
+}

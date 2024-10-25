@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCAL COMMUNITY</title>
+  <link rel="stylesheet" href="webpage.css">  <!-- Connect CSS file -->
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION BAR -->
+  <header class="container">
+    <div class="nav-logo">
+        <img id="logo2" src="logo2.png" alt="Community Logo"> 
+        <a href="header.html"> 
+        <h3 id="title">LOCAL <br> COMMUNITY</h3></a>
+      
+    </div>
+
+    <nav class="nav-bar">
+      <ul class="navigation">
+        <li><a title="GO TO EVENT" href="event.html">Event</a></li>
+        <li><a title="GO TO DETAILS" href="details.html">Details</a></li>
+        <li><a title="GO TO GALLERY" href="gallery.html">Gallery</a></li>
+        <li><a title="GO TO CONTACT" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-register">
+      <a title="REGISTER" href="register.html">
+        <button id="register">REGISTER</button>
+      </a>
+    </div>
+  </header>
+
+<!-- === Register === -->
+
+
+<!-- Registration Form -->
+<div class="container-register">
+  
+  <div class="reg-title">
+    <h2>REGISTRATION FORM</h2>
+  </div>
+
+  <form class="registration-form" action="#" method="POST">
+    
+    <!-- First and Last Name Section -->
+    <div class="form-layout">
+      <div class="input-group">
+        <img class="icon" src="person-icon.png" alt="Person Icon">
+        <input type="text" id="first-name"  placeholder="First Name" required>
+      </div>
+
+      <div class="input-group">
+        <img class="icon" src="person-icon.png" alt="Person Icon">
+        <input type="text" id="last-name" placeholder="Last Name">
+      </div>
+    </div>
+
+    <!-- Email and Phone Section -->
+    <div class="form-layout">
+      <div class="input-group">
+        <img class="icon" src="email-icon.png" alt="Email Icon">
+        <input type="text" id="email"  placeholder="Email">
+      </div>
+
+      <div class="input-group">
+        <img class="icon" src="phone-icon.png" alt="Phone Icon">
+        <input type="text" id="phone" placeholder="Phone">
+      </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="form-layout">
+      <input type="text" id="comment" name="comment" placeholder="Comment/Question" required>
+    </div>
+
+    <!-- Terms and Conditions Checkbox -->
+    <div class="form-layout">
+      <label>
+        <input id="checkbox" type="checkbox"> I agree to all statements in the <a href="#">Terms of Service</a>.
+      </label>
+    </div>
+
+    <!-- Register Button -->
+    <div class="form-layout">
+      <button type="submit" class="reg-button">REGISTER</button>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
