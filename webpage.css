@@ -425,6 +425,7 @@ iframe { /*SO IT WOULD BE SMALLER AND MAGING FIT IN SMALLER SIZE OF SCREEN*/
   }
   .container-register #checkbox{ /*ALTERING WIDTH OF CHECKBOX*/
     width:10px;
+     height: 10px;
   }
   .form-layout #comment { 
     width: 300px; /*ADJUST THE WIDTH WHEN THE SCREEN GETTING SMALLER
